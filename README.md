@@ -23,3 +23,9 @@ tulips (score = 0.04926)
 dandelion (score = 0.03033)
 roses (score = 0.00260)
 ```
+
+how to use post-runner
+```
+curl -X POST --form file=@daisy-02.jpg  --form press=submit http://localhost:5001/
+
+```
