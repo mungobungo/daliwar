@@ -2,6 +2,10 @@ FROM daliwar/base_tensorflow
 
 MAINTAINER Oleg Taykalo <oleg.taykalo@gmail.com>
 
+# Usage: ADD [source directory or URL] [destination directory]
+ADD /model /model
+
 WORKDIR "/model"
 
-CMD ["touch bad.txt && ls"]
+#CMD "ls"
+CMD python run_model.py $IMAGE
